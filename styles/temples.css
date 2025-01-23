@@ -1,0 +1,25 @@
+body {
+    font-family: 'Your chosen font', sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .temples {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  /* Add more mobile-first styles */
+  
