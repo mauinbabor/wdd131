@@ -1,25 +1,70 @@
+
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: 'Your chosen font', sans-serif;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  nav a {
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  .temples {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  figure {
-    text-align: center;
-  }
-  
-  /* Add more mobile-first styles */
-  
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #001d73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+  list-style: none;
+}
+
+.nav-menu li {
+  padding: 0.5rem 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.temple-grid img {
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Crop images to fit within the specified dimensions */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+figure {
+  text-align: center;
+}
+
+footer {
+  background-color: #0a9396;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
