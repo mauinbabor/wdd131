@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siargao - The Surfing Paradise</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Link to JS file with defer attribute -->
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Header with Responsive Hero Image -->
+    <header>
+      <picture>
+        <!-- For small screens -->
+        <source media="(max-width: 600px)" srcset="images/siargao-hero-small.webp" />
+        <!-- For larger screens -->
+        <source media="(min-width: 601px)" srcset="images/siargao.jpg" />
+        <img src="images/siargao.jpg" alt="Siargao Island" />
+      </picture>
+      <h1>Siargao</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Weather Section -->
+      <section class="weather">
+        <h2>Weather <span class="weather-icon"></span></h2>
+        <p>Temperature: <span id="temperature">25</span>&deg;C</p>
+        <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+      </section>
+
+      <!-- Additional Content about Siargao -->
+      <section class="content">
+        <p>
+          Discover the pristine beaches, world-class surfing, and vibrant local culture of Siargao.
+          Whether you’re seeking adventure on the waves or a peaceful escape in nature, Siargao has
+          something for everyone.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer with Dynamic Year and Last Modified Date -->
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Mauin Babor | Siargao | Last Modified:02/01/2025 <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
+
